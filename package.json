@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "cy:run:e2e": "cypress run \"cypress/e2e/features/**/*\" --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "test:allure": "npm run cy:run:e2e && npm run report:allure"
   },
   "repository": {
     "type": "git",
@@ -19,8 +22,10 @@
   "homepage": "https://github.com/noviadisuryo/cypress-cucumber#readme",
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.3",
+    "allure-commandline": "^2.18.1",
     "cypress": "^10.3.0",
-    "esbuild": "^0.14.49"
+    "esbuild": "^0.14.49",
+    "mocha-allure-reporter": "^1.4.0"
   },
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^11.5.1"
