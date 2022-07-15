@@ -1,8 +1,15 @@
-name: Cypress
+name: Cypress Runner
 on: [push]
 
 jobs:
-  cypress-run:
+  Code-Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Super Linter
+        uses: github/super-linter@v4.9.4
+
+  cypress-ui-test:
+    needs: Code-Check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,10 +21,10 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Cypress run
-        run: npm run test:allure
+        uses: cypress-io/github-action@v4.1.0
         with:
           browser: chrome
-          headless: true
+          
       - uses: actions/upload-artifact@v2
         if: failure()
         with:
