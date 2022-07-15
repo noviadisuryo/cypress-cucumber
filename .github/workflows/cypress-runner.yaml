@@ -2,14 +2,14 @@ name: Cypress Runner
 on: [push]
 
 jobs:
-  Code-Check:
+  Checking-Code:
     runs-on: ubuntu-latest
     steps:
       - name: Super Linter
         uses: github/super-linter@v4.9.4
 
-  cypress-ui-test:
-    needs: Code-Check
+  cypress-run:
+    needs: Checking-Code
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
