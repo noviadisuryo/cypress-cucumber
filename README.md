@@ -15,21 +15,27 @@ npm install cypress --save-dev
 npx cypress run
 ```
 
-## Test Case
+## Vital Dependency
 
 ```bash
-Lokasi testcase dan dependensinya
+Silakan google untuk panduan instalasinya
 
-# Gherkin feature file
-cypress/e2e/feature
+# Cypress 10 spec bundler
+@bahmutov/cypress-esbuild-preprocessor
 
-# Step Definitions
-cypress/e2e/step_definitions
+# Cypress 10 cucumber integrator
+@badeball/cypress-cucumber-preprocessor
+
+# Generate allure report from test result
+allure-commandline
+
+#Allure reporter for mocha
+mocha-allure-reporter
 ```
 
-## Penggunaan
+## How to Run the Test
 ```bash
-# run test di cmd
+# run test di cmd (headless)
 npx cypress run
 
 # run test dengan browser tertentu
