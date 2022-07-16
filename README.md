@@ -32,15 +32,15 @@ cypress/e2e/step_definitions
 # run test di cmd
 npx cypress run
 
-# run test dengan cypress UI
-npm cypress open
-
 # run test dengan browser tertentu
-npx cypress open --browser chrome
-npx cypress open --browser firefox
+npx cypress run --browser chrome
+npx cypress run --browser firefox
 
-# run test dengan non headless
-npx cypress open --headed
+# run test non headless
+npx cypress run --headed
+
+# run test lewat cypress UI
+npm cypress open
 
 # run test menggunakan allure report
 npm run test:allure
