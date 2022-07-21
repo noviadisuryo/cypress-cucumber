@@ -1,14 +1,14 @@
-name: Cypress Runner
+name: CI
 on: [push]
 
 jobs:
-  Checking-Code:
+  Linting:
     runs-on: ubuntu-latest
     steps:
       - name: Super Linter
         uses: github/super-linter@v4.9.4
 
-  cypress-run:
+  Test:
     needs: Checking-Code
     runs-on: ubuntu-latest
     steps:
@@ -45,4 +45,22 @@ jobs:
           allure_results: build/allure-results
           gh_pages: gh-pages
           allure_report: allure-report
-          allure_history: allure-history
+          allure_history: allure-history 
+  
+  build:
+    name: Build and push Docker image to Docker Hub
+    needs: cypress-run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Push to Docker Hub
+        uses: docker/build-push-action@v1 # Info: https://github.com/docker/build-push-action/tree/releases/v1#tags
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          repository: ${{ secrets.DOCKERHUB_REPOSITORY }}
+          tag_with_ref: true # Info: https://github.com/docker/build-push-action/tree/releases/v1#tag_with_ref
+          tag_with_sha: true # Info: https://github.com/docker/build-push-action/tree/releases/v1#tag_with_sha
+          tags: latest
