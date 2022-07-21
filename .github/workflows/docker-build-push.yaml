@@ -1,13 +1,11 @@
 name: Push Docker Image
 
-on:
-  # Build and push Docker images *only* for releases.
-  release:
-    types: [published] # , created, edited
+on: [push]
 
 jobs:
   push_to_registry:
     name: Build and push Docker image to Docker Hub
+    needs: cypress-run
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
