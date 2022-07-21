@@ -9,7 +9,7 @@ jobs:
         uses: github/super-linter@v4.9.4
 
   Test:
-    needs: Checking-Code
+    needs: Linting
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -47,9 +47,9 @@ jobs:
           allure_report: allure-report
           allure_history: allure-history 
   
-  build:
+  Build-Image:
     name: Build and push Docker image to Docker Hub
-    needs: cypress-run
+    needs: Test
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
