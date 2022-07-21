@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cy:run": "cypress run",
     "test": "test",
     "cypress": "cypress open",
     "e2e": "cypress run \"cypress/e2e/features/**/*\" --reporter mocha-allure-reporter",
