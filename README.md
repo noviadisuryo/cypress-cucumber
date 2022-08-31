@@ -18,7 +18,7 @@ npx cypress run
 ## Vital Dependency
 
 ```bash
-Silakan google untuk panduan instalasinya
+Silakan google untuk panduan instalasinya.
 
 # Cypress 10 spec bundler
 @bahmutov/cypress-esbuild-preprocessor
