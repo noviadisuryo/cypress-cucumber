@@ -30,7 +30,7 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: "cypress/e2e/features/*.feature",
-    baseUrl: "https://www.saucedemo.com",
+    baseUrl: "https://music.youtube.com/",
     chromeWebSecurity: false,
   },
 });

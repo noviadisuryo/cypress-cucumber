@@ -51,11 +51,3 @@ npm cypress open
 # run test menggunakan allure report
 npm run test:allure
 ```
-
-## Sumber 
-
-[Joan Media - Cypress 10 Installation](https://www.youtube.com/watch?v=uIX8nHBfo-o) 
-
-[Joan Media - Cypress with Cucumber](https://youtu.be/FlQ9Carxeds)
-
-[Sailaja Kandula](https://youtu.be/_1B4oB1QHtM)

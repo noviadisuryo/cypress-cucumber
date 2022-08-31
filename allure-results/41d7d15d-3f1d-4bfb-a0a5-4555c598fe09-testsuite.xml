@@ -1,0 +1,79 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1661941583125' stop='1661941628759'>
+    <name>Login page</name>
+    <title>Login page</title>
+    <test-cases>
+        <test-case start='1661941583126' status='failed' stop='1661941597657'>
+            <name>Success Login</name>
+            <title>Success Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.
+                    at Object.usernameInput (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9598:35)
+                    at homeSaucePage.typeUsername (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9604:25)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9628:19)
+                    at Registry.runStepDefininition (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:8354:48)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9130:48)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661941597671' status='failed' stop='1661941608503'>
+            <name>Blocked Login</name>
+            <title>Blocked Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.
+                    at Object.usernameInput (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9598:35)
+                    at homeSaucePage.typeUsername (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9604:25)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9628:19)
+                    at Registry.runStepDefininition (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:8354:48)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9130:48)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661941608505' status='failed' stop='1661941618480'>
+            <name>Incorrect Username Login</name>
+            <title>Incorrect Username Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.
+                    at Object.usernameInput (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9598:35)
+                    at homeSaucePage.typeUsername (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9604:25)
+                    at eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9634:21)
+                at Array.forEach (&lt;anonymous>)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9631:24)
+                    at Registry.runStepDefininition (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:8354:48)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9130:48)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1661941618481' status='failed' stop='1661941628565'>
+            <name>Incorrect Password Login</name>
+            <title>Incorrect Password Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `#user-name`, but never found it.
+                    at Object.usernameInput (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9598:35)
+                    at homeSaucePage.typeUsername (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9604:25)
+                    at eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9634:21)
+                at Array.forEach (&lt;anonymous>)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9631:24)
+                    at Registry.runStepDefininition (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:8354:48)
+                    at Context.eval (https://music.youtube.com/__cypress/tests?p=cypress\e2e\features\login.feature:9130:48)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
