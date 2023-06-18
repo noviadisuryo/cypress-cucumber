@@ -22,7 +22,7 @@ Feature: Login page
             | username | password     |
             | testName | secret_sauce |
         And A user clicks on the login button
-        Then The error message "Epic sadface: Username and password do not match any user in this service" is displayed
+        Then vvvvv
     
     Scenario: Incorrect Password Login
         When A user provides incorrect credentials

@@ -46,7 +46,7 @@ npx cypress run --browser firefox
 npx cypress run --headed
 
 # run test lewat cypress UI
-npm cypress open
+npx cypress open
 
 # run test menggunakan allure report
 npm run test:allure
